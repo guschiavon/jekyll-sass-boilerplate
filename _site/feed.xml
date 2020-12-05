@@ -3,16 +3,16 @@
   <channel>
     <atom:link href="http://localhost:4000feed.xml" rel="self" type="application/rss+xml" />
     <title>Jekyll Bigfoot</title>
-    <description>A loaded Jekyll boilerplate optimized for CloudCannon CMS</description>
+    <description_text>Boilerplate using Jekyll and Sass, optimised for CloudCannon CMS</description_text>
     <link>http://localhost:4000</link>
     
       
         <item>
           <title>My third post</title>
-          <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <description_text>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           <![CDATA[<img align="left" hspace="5" src="http://localhost:4000/assets/images/placeholder-001.jpg"/>]]>
-          </description>
-          <pubDate>Sun, 01 Mar 2020 00:00:00 +0800</pubDate>
+          </description_text>
+          <pubDate>Sun, 01 Mar 2020 00:00:00 -0300</pubDate>
           <link>http://localhost:4000/webdev/2020/my-third-post</link>
           <guid isPermaLink="true">http://localhost:4000/webdev/2020/my-third-post</guid>
         </item>
@@ -21,10 +21,10 @@
       
         <item>
           <title>My second post</title>
-          <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <description_text>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           <![CDATA[<img align="left" hspace="5" src="http://localhost:4000/assets/images/placeholder-003.jpg"/>]]>
-          </description>
-          <pubDate>Sat, 01 Feb 2020 00:00:00 +0800</pubDate>
+          </description_text>
+          <pubDate>Sat, 01 Feb 2020 00:00:00 -0300</pubDate>
           <link>http://localhost:4000/design/2020/my-second-post</link>
           <guid isPermaLink="true">http://localhost:4000/design/2020/my-second-post</guid>
         </item>
@@ -33,10 +33,10 @@
       
         <item>
           <title>My first post</title>
-          <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <description_text>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           <![CDATA[<img align="left" hspace="5" src="http://localhost:4000/assets/images/placeholder-001.jpg"/>]]>
-          </description>
-          <pubDate>Wed, 01 Jan 2020 00:00:00 +0800</pubDate>
+          </description_text>
+          <pubDate>Wed, 01 Jan 2020 00:00:00 -0300</pubDate>
           <link>http://localhost:4000/webdev/2020/my-first-post</link>
           <guid isPermaLink="true">http://localhost:4000/webdev/2020/my-first-post</guid>
         </item>

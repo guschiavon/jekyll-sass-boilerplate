@@ -1,0 +1,21 @@
+
+
+
+// Gallery-specific padding
+
+.padding-gallery {
+  padding : var(--gallery-padding);
+}
+
+.gallery-main {
+  padding-right     : calc(#{var(--gallery-padding) / 2});
+}
+
+.gallery-md-top {
+  padding-left      : calc(#{var(--gallery-padding) / 2});
+  padding-bottom    : calc(#{var(--gallery-padding) / 2});
+}
+.gallery-md-bottom {
+  padding-left      : calc(#{var(--gallery-padding) / 2});
+  padding-top       : calc(#{var(--gallery-padding) / 2});
+}

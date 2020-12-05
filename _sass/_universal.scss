@@ -1,10 +1,13 @@
 
+body {
+  overflow-x: hidden;
+}
 // Typography
 h1,
 h2,
 h3 {
-  font-family     : $heading-font-family;
-  margin-bottom   : $heading-default-bottom-margin;
+  font-family     : $heading-font;
+  margin-bottom   : var(--heading-default-bottom-margin);
   letter-spacing  : 2px;
 }
 
@@ -15,21 +18,39 @@ h1 {
 }
 
 h2 {
-  color         : $secondary-color;
+  color         : $light-color;
   font-size     : 2.5rem;
 }
 
 h3 {
-  color         : $secondary-shade;
+  color         : $light-color;
   font-size     : 2rem;
 }
 
 a {
-  font-family   : inherit;
+  text-decoration : none;
 }
 
-p {
-  font-family    : $body-font-family;
+p,
+span,
+ul,
+ol,
+li,
+blockquote,
+cite,
+button,
+input,
+label,
+textarea,
+form {
+  font-family    : $body-font;
   font-size      : 1.5rem;
   line-height    : 1.5;
+}
+
+a,
+small,
+strong {
+  font-family     : inherit;
+  font-size       : inherit;
 }

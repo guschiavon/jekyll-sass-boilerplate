@@ -8,15 +8,22 @@
 
 // Sass variables
 // Sass global variables must come BEFORE partials that use them and declared on the 'main.scss' file
-$primary-color                   : {{site.data.settings.colors.primary_color}};
-$primary-shade                   : {{site.data.settings.colors.primary_shade_color}};
-$secondary-color                 : {{site.data.settings.colors.secondary_color}};
-$secondary-shade                 : {{site.data.settings.colors.secondary_shade_color}};
-$accent-color                    : {{site.data.settings.colors.accent_color}};
-$body-font-family                : {{site.data.settings.fonts.body_font_family}};
-$heading-font-family             : {{site.data.settings.fonts.design_font_family}};
-$heading-default-bottom-margin   : 2rem;
-$gallery-padding                 : 1.5rem;
+$dark-color                   : {{site.data.settings.theme.dark_color}};
+$light-color                  : {{site.data.settings.theme.light_color}};
+$accent-color                 : {{site.data.settings.theme.accent_color}};
+$complementary-color          : {{site.data.settings.theme.complementary_color}};
+$body-font                    : {{site.data.settings.theme.body_font_family}};
+$heading-font                 : {{site.data.settings.theme.heading_font_family}};
+
+// For variables that change according to media queries, use CSS variables instead of Sass variables
+:root {
+  --gallery-padding                 : 1.5rem;
+  --heading-default-bottom-margin   : 2rem;
+  --heading-font-size               : 4rem;
+  --body-font-size                  : 1.2rem;
+  --padding                         : 0.8rem;
+  --margin                          : 1rem;
+}
 
 // Sass partials
 // Add necessary partials from here onwards
@@ -24,7 +31,7 @@ $gallery-padding                 : 1.5rem;
   '_mixins',
   '_utility',
   '_universal',
-  '_padding',
+  '_gallery',
   '_containers',
   '_buttons',
   '_nav',

@@ -7,6 +7,7 @@ cloudcannon:
 # Sass partials directory
 sass:
   sass_dir: _sass
+  style: compressed
 
 # Global permalinks
 permalink: /:categories/:year/:title
@@ -28,7 +29,7 @@ defaults:
       title:
       subtitle:
       author:
-      description: SEO content. Limit to 160 characters.
+      description_text: SEO content. Limit to 160 characters.
       preview_image:
       preview_image_alt_text:
       categories: []
@@ -44,7 +45,7 @@ defaults:
       title:
       subtitle:
       author:
-      description: SEO content. Limit to 160 characters.
+      description_text: SEO content. Limit to 160 characters.
       preview_image:
       preview_image_alt_text:
       categories: []
@@ -57,7 +58,7 @@ sections: []
 _array_structures:
   sections:
     - label: Two Image Grid
-      description: A responsive 2-column, 2-row grid with images and paragraphs
+      description_text: A responsive 2-column, 2-row grid with images and paragraphs
       icon: ballot
       value:
         _id: 2_image_grid
@@ -68,7 +69,7 @@ _array_structures:
         box_2_image:
         box_2_image_alt_text:
     - label: Three Image Gallery
-      description: A responsive 3-image gallery with large and small images
+      description_text: A responsive 3-image gallery with large and small images
       icon: collections
       value:
         _id: 3_image_gallery
@@ -82,9 +83,9 @@ _array_structures:
 # Plugins installed
 plugins:
   - jekyll-sitemap
-  - jekyll-responsive-image
   - jekyll-archives
   - jekyll-webp
+  - jekyll-responsive-image
 
 # Configuration of the jekyll-responsive-image plugin
 responsive_image:
@@ -123,3 +124,20 @@ webp:
 # Configuration of the compress_html layout
 compress_html:
   comments: all # Removes all comments; remove this line to enable comments in production site
+
+icons:
+  - "Facebook"
+  - "Twitter"
+  - "Instagram"
+  - "LinkedIn"
+  - "Pinterest"
+  - "YouTube"
+  - "StackOverflow"
+  - "Github"
+  - "Snapchat"
+  - "Messenger"
+  - "WhatsApp"
+  - "Telegram"
+  - "WeChat"
+  - "TikTok"
+  - "Vimeo"

@@ -1,50 +1,225 @@
-
-// Alignment
-
-.center {
-  text-align : center;
+// Theme settings
+[data-theme="dark"] {
+  background-color: $dark-color;
+  color: $light-color;
+  .btn {
+    background-color: $light-color;
+    color: $dark-color;
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+  }
+  blockquote {
+    border-left: 1rem solid;
+    border-color: lighten($light-color, 7);
+  }
+  code {
+    color: $dark-color;
+    background-color: darken($light-color, 7);
+  }
+  pre code {
+    color: unset;
+    background-color: unset;
+  }
 }
 
+// paddings
+
+.py-xs {
+  padding-top:    var(--padding);
+  padding-bottom: var(--padding);
+}
+.py-sm {
+  padding-top:    calc(var(--padding) * 1.3);
+  padding-bottom: calc(var(--padding) * 1.3);
+}
+.py-md {
+  padding-top:    calc(var(--padding) * 1.7);
+  padding-bottom: calc(var(--padding) * 1.7);
+}
+.py-lg {
+  padding-top:    calc(var(--padding) * 2);
+  padding-bottom: calc(var(--padding) * 2);
+}
+.px-xs {
+  padding-right:  var(--padding);
+  padding-left:   var(--padding);
+}
+.px-sm {
+  padding-right:  calc(var(--padding) * 1.3);
+  padding-left:   calc(var(--padding) * 1.3);
+}
+.px-md {
+  padding-right:  calc(var(--padding) * 1.7);
+  padding-left:   calc(var(--padding) * 1.7);
+}
+.px-lg {
+  padding-right:  calc(var(--padding) * 2);
+  padding-left:   calc(var(--padding) * 2);
+}
+
+// Margins
+
+// Vertical margins
+.mt-1 {
+  margin-top: var(--margin);
+}
+.mt-2 {
+  margin-top: calc(var(--margin) * 2);
+}
+.mt-3 {
+  margin-top: calc(var(--margin) * 3);
+}
+.mt-4 {
+  margin-top: calc(var(--margin) * 4);
+}
+.mb-1 {
+  margin-bottom: var(--margin);
+}
+.mb-2 {
+  margin-bottom: calc(var(--margin) * 2);
+}
+.mb-3 {
+  margin-bottom: calc(var(--margin) * 3);
+}
+.mb-4 {
+  margin-bottom: calc(var(--margin) * 4);
+}
+.my-1 {
+  margin-top:     var(--margin);
+  margin-bottom:  var(--margin);
+}
+.my-2 {
+  margin-top:     calc(var(--margin) * 2);
+  margin-bottom:  calc(var(--margin) * 2);
+}
+.my-3 {
+  margin-top:     calc(var(--margin) * 3);
+  margin-bottom:  calc(var(--margin) * 3);
+}
+.my-4 {
+  margin-top:     calc(var(--margin) * 4);
+  margin-bottom:  calc(var(--margin) * 4);
+}
+
+// Horizontal margins
+.mr-1 {
+  margin-right: var(--margin);
+}
+.mr-2 {
+  margin-right: calc(var(--margin) * 2);
+}
+.mr-3 {
+  margin-right: calc(var(--margin) * 3);
+}
+.mr-4 {
+  margin-right: calc(var(--margin) * 4);
+}
+.ml-1 {
+  margin-left: var(--margin);
+}
+.ml-2 {
+  margin-left: calc(var(--margin) * 2);
+}
+.ml-3 {
+  margin-left: calc(var(--margin) * 3);
+}
+.ml-4 {
+  margin-left: calc(var(--margin) * 4);
+}
+.mx-1 {
+  margin-left:  var(--margin);
+  margin-right: var(--margin);
+}
+.mx-2 {
+  margin-left:  calc(var(--margin) * 2);
+  margin-right: calc(var(--margin) * 2);
+}
+.mx-3 {
+  margin-left:  calc(var(--margin) * 3);
+  margin-right: calc(var(--margin) * 3);
+}
+.mx-4 {
+  margin-left:  calc(var(--margin) * 4);
+  margin-right: calc(var(--margin) * 4);
+}
+
+// Typography
+
+.txt-bold {
+  font-weight: 700;
+}
+.txt-thin {
+  font-weight: 200;
+}
+.txt-highlight {
+  color: $accent-color;
+}
+.txt-dark {
+  color: $dark-color;
+}
+.txt-light {
+  color: $light-color;
+}
+.txt-small,
+.txt-small > * {
+  font-size: calc(var(--body-font-size) * 0.80);
+}
+
+// alignment 
 .right {
-  text-align : right;
+  text-align: right;
 }
-
 .left {
-  text-align : left;
+  text-align: left;
+}
+.center {
+  text-align: center;
 }
 
-.flex-center {
-  @include flex-center;
+// images 
+.responsive-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-.flex-right {
-  @include flex-right;
+// dividers
+.divider-lg {
+  position: relative;
+  border: none;
+  background-color: $accent-color;
+  height: 10px;
+  width: 100%;
+  z-index: 1000;
 }
-
-.flex-left {
-  @include flex-left;
+.border-bottom {
+  border-bottom: 5px solid $accent-color;
+  display: inline-block;
 }
 
 // Backgrounds
 
-.bg-primary {
-  color            : $primary-color;
-  background-color : $primary-shade;
+.bg-dark {
+  color            : $light-color;
+  background-color : $dark-color;
 }
 
-.bg-secondary {
-  color            : $secondary-shade;
-  background-color : $secondary-color;
-}
-
-.bg-shade {
-  color            : $primary-shade;
-  background-color : $secondary-shade;
+.bg-light {
+  color            : $dark-color;
+  background-color : $light-color;
 }
 
 .bg-accent {
-  color            : $primary-color;
+  color            : $complementary-color;
   background-color : $accent-color;
+}
+
+.bg-complementary {
+  color            : $accent-color;
+  background-color : $complementary-color;
 }
 
 // Display

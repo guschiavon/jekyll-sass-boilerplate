@@ -5,16 +5,16 @@ layout: null
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <atom:link href="{{site.url}}feed.xml" rel="self" type="application/rss+xml" />
-    <title>{{site.data.settings.basics.site_title}}</title>
-    <description>{{site.data.settings.basics.description}}</description>
+    <title>{{site.data.settings.general.site_title}}</title>
+    <description_text>{{site.data.settings.general.description_text}}</description_text>
     <link>{{site.url}}</link>
     {% for post in site.posts %}
       {% unless post.draft %}
         <item>
           <title>{{ post.title | xml_escape }}</title>
-          <description>{{ post.description | xml_escape }}
+          <description_text>{{ post.description_text | xml_escape }}
           <![CDATA[<img align="left" hspace="5" src="{{site.url}}{{post.preview_image}}"/>]]>
-          </description>
+          </description_text>
           <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
           <link>{{site.url}}{{ post.url}}</link>
           <guid isPermaLink="true">{{site.url}}{{post.url}}</guid>
